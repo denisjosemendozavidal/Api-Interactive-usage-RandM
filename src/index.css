@@ -662,7 +662,7 @@ li {
         background-color: var(--lighter-green-bgcolor);
         padding: 5%;
         border-radius: 50px;
-        width: 100vw;
+        width: 95vw;
         height: fit-content;
         transition: 0.5s;
         margin: 1%;
@@ -720,6 +720,7 @@ li {
         gap: 5%;
         height: fit-content;
         transition: 0.5s;
+        margin: 5%;
       }
   
         .location-card:hover {
@@ -825,6 +826,8 @@ li {
             border-radius: 20px;
             font-weight: lighter;
             transition: 0.3s;
+            width: 95%;
+            
           }
   
             .suglist > li:hover {
