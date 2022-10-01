@@ -5,12 +5,14 @@ import axios from 'axios'
 import getRandomNumber from './utils/getRandomNumber'
 import LocationCard from './Components/LocationCard'
 import ResidentsCard from './Components/ResidentsCard'
+import Filters from './Components/Filters'
 
 function App() {
   const [info, setinfo] = useState()
   let RandomNumber = getRandomNumber()
   const [desiredLocation, setDesiredLocation] = useState()
-  
+  const [sugList, setSugList] = useState()
+  const [APIsuggestions, setAPIsuggestions] = useState()
 
   useEffect (() => {
     const url = `https://rickandmortyapi.com/api/location/${RandomNumber}`
@@ -28,9 +30,19 @@ function App() {
     RandomNumber = desiredLocation
   }
 
-  console.log(info);
+  const handleChange = e => {
+    let url = `https://rickandmortyapi.com/api/location?name=${e.target.value}`
 
-  <img src="./img" alt="" />
+    if (e.target.value === "") {
+      setSugList()
+    } else {
+      axios.get(url)
+         .then(res => setSugList(res.data.results))
+         .catch(err => console.log(err))
+    }
+  }
+
+  console.log(sugList);
   
   return (
     <div className="App">
@@ -38,9 +50,10 @@ function App() {
       <div className='everything-but-the-main-img'>
         <header className='header'>
           <form className='search-and-button' onSubmit={handleSubmit}>
-            <input className='search' id='search' placeholder='Try a number from 1 to 126' type="text" />
+            <input className='search' id='search' placeholder='Try a number from 1 to 126' type="text" onChange={handleChange}/>
             <button className='location-finder-button'>Find your favorite location</button>
           </form>
+            <Filters sugList = {sugList}/>
         </header>
         <div className='location-card'>
           <LocationCard key={name} info= {info}/>

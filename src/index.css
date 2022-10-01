@@ -10,6 +10,7 @@
   --lighter-green-bgcolor: #135b66;
   --red-circle: red; 
   --green-circle: lightgreen;
+  --green-portal: #A7CB54; 
 }
 
 li {
@@ -39,7 +40,7 @@ li {
     align-content: center;
     gap: 5%;
     padding: 3%;
-    background-image: url("./images/green-stars.jpg");
+    background-color: var(--green-bgcolor);
     background-image: url("./images/green-starts.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -55,6 +56,7 @@ li {
       border-radius: 50px;
       width: 50vh;
       height: 160px;
+      
     }
 
       .search {
@@ -159,3 +161,19 @@ li {
           font-size: medium;
           font-weight: lighter;
         }
+
+        .suglist {
+          max-height: 100px;
+          overflow-y: scroll;
+          color: var(--dark-white-bgcolor);
+          background-color: var(--lighter-green-bgcolor);
+          margin-top: 3%;
+          text-align: center;
+          border-radius: 20px;
+          font-weight: lighter;
+        }
+
+          .suglist > li:hover {
+            cursor: pointer;
+            color: var(--green-portal);
+          }
