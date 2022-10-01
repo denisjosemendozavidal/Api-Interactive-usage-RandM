@@ -424,13 +424,14 @@ li {
     display: flex;
     width: 100vw;
     height: fit-content;
-    position: fixed;
+    flex-direction: column;
+    position: relative;
   }
   
     .App-main-img {
       height: 100vh;
-      width: 30vw;
-      display: none;
+      width: 100vw;
+      
     }
   
     .everything-but-the-main-img {
@@ -533,12 +534,9 @@ li {
         }
   
       .residents-card-wrapper {
-        overflow-y: scroll;
-        overflow-x: hidden;
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
         gap: 5%;
         padding: 2%;
       }
@@ -625,13 +623,13 @@ li {
     display: flex;
     width: 100vw;
     height: fit-content;
-    position: fixed;
+    position: relative;
   }
   
     .App-main-img {
-      height: 100vh;
-      width: 30vw;
-      display: none;
+      height: 50vh;
+      width: 100vw;
+      
     }
   
     .everything-but-the-main-img {
@@ -745,10 +743,10 @@ li {
         overflow-x: hidden;
         width: 100%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         gap: 5%;
         padding: 2%;
+        justify-content: center;
       }
   
         .ResidentsCard {
@@ -760,6 +758,7 @@ li {
           color: var(--dark-white-bgcolor);
           padding: 3%;
           transition: 0.5s;
+          margin: 3%;
         }
   
               .ResidentsCard:hover{
