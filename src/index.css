@@ -79,7 +79,7 @@ li {
       display: flex;
       flex-direction: column;
       gap: 5%;
-      
+      height: fit-content;
     }
 
       .locationCard-tittle {
@@ -112,6 +112,7 @@ li {
         width: 25%;
         overflow: hidden;
         color: var(--dark-white-bgcolor);
+        padding: 3%;
       }
 
             .ResidentsCard:hover{
@@ -134,3 +135,26 @@ li {
             width: 10%;
             border-radius: 50%;
           }
+
+        .ResidentsCard-name {
+          align-self: center;
+          text-align: center;
+          font-size: large;
+          margin: 5%;
+          font-weight: lighter;
+        }
+
+        .ResidentsCard-species {
+          font-size: medium;
+          font-weight: lighter;
+        }
+
+        .ResidentsCard-origin {
+          font-size: medium;
+          font-weight: lighter;
+        }
+
+        .ResidentsCard-ep-apearing {
+          font-size: medium;
+          font-weight: lighter;
+        }

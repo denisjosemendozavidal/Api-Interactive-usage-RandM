@@ -30,7 +30,7 @@ const ResidentsCard = ({url}) => {
         </header>
 
         <section>
-            <h2 className='ResidentsCard-name'>{`Name: ${resident?.name}`}</h2>
+            <h2 className='ResidentsCard-name'>{`${resident?.name}`}</h2>
             <h4 className='ResidentsCard-species'>{`Species: ${resident?.species}`}</h4>
             <h4 className='ResidentsCard-origin'>{`Origin: ${resident?.origin.name}`}</h4>
             <h4 className='ResidentsCard-ep-apearing'>{`Appeard on:${resident?.episode.length} episode/s`} </h4>
