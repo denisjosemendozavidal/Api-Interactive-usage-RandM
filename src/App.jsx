@@ -51,7 +51,7 @@ function App() {
         <header className='header'>
           <form className='search-and-button' onSubmit={handleSubmit}>
             <input className='search' id='search' placeholder='Try a number from 1 to 126' type="text" onChange={handleChange}/>
-            <button className='location-finder-button'>Find your favorite location</button>
+            <button className='location-finder-button'><span>Find your favorite location</span></button>
           </form>
             <Filters sugList = {sugList}/>
         </header>

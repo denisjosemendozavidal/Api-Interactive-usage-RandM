@@ -10,7 +10,7 @@
   --lighter-green-bgcolor: #135b66;
   --red-circle: red; 
   --green-circle: lightgreen;
-  --green-portal: #A7CB54; 
+  --green-portal: #0f0; 
   --light-black: rgb(34, 32, 32);
 }
 
@@ -57,13 +57,19 @@ li {
       border-radius: 50px;
       width: 50vh;
       height: 160px;
-      
+      transition: 0.5s;
     }
+
+      .search-and-button:hover{
+        box-shadow: 3px 3px 30px var(--green-portal);
+        transition: 0.5s;
+      }
 
       .search {
         font-size: x-large;
         text-align: center;
       }
+
 
       .location-finder-button {
         font-size: large;
@@ -72,8 +78,25 @@ li {
         align-self: center;
         border-radius: 50px;
         padding: 2%;
+        background-color: var(--green-circle);
+        transition: 1s;
       }
-    
+
+        .location-finder-button:hover {
+          font-size: large;
+          color: var(--dark-white-bgcolor);
+          height: 100%;
+          width: 50%;
+          align-self: center;
+          border-radius: 50px;
+          padding: 2%;
+          background-color: var(--green-portal);
+          transition: 1s;
+          cursor: pointer;
+          box-shadow: 3px 3px 30px var(--green-portal);
+        }
+
+
     .location-card {
       background-color: var(--lighter-green-bgcolor);
       width: 100%;
@@ -84,7 +107,13 @@ li {
       flex-direction: column;
       gap: 5%;
       height: fit-content;
+      transition: 0.5s;
     }
+
+      .location-card:hover {
+        box-shadow: 3px 3px 30px var(--green-portal);
+        transition: 0.5s;
+      }
 
       .locationCard-tittle {
         text-align: center;
@@ -117,10 +146,12 @@ li {
         overflow: hidden;
         color: var(--dark-white-bgcolor);
         padding: 3%;
+        transition: 0.5s;
       }
 
             .ResidentsCard:hover{
-              box-shadow: 3px 3px 30px #A7CB54;
+              box-shadow: 3px 3px 30px var(--green-portal);
+              transition: 0.5s;
             }
 
         
@@ -172,9 +203,12 @@ li {
           text-align: center;
           border-radius: 20px;
           font-weight: lighter;
+          transition: 0.3s;
         }
 
           .suglist > li:hover {
             cursor: pointer;
             color: var(--green-portal);
+            box-shadow: 3px 3px 30px var(--green-portal);
+            transition: 0.3s;
           }
