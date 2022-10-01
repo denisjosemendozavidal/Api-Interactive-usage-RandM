@@ -163,7 +163,31 @@ li {
               transition: 0.5s;
             }
 
-        
+            /*Styles for the scroll bar start here*/
+
+              /* width */
+              ::-webkit-scrollbar {
+                width: 5px;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                background: transparent;
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: var(--green-portal);
+                border-radius: 50px;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: var(--green-portal);
+                box-shadow: 3px 3px 30px var(--green-portal);
+              }
+
+              /*Styles for the scroll bar end here*/
 
         .ResidentsCard-Header-img {
           width: 100%;
@@ -434,6 +458,7 @@ li {
     height: fit-content;
     flex-direction: column;
     position: relative;
+    
   }
   
     .App-main-img {
@@ -519,6 +544,7 @@ li {
         gap: 5%;
         height: fit-content;
         transition: 0.5s;
+        margin: 5%;
       }
   
         .location-card:hover {
@@ -558,6 +584,7 @@ li {
           color: var(--dark-white-bgcolor);
           padding: 3%;
           transition: 0.5s;
+          margin: 1%;
         }
   
               .ResidentsCard:hover{
@@ -775,8 +802,6 @@ li {
                 box-shadow: 3px 3px 30px var(--green-portal);
                 transition: 0.5s;
               }
-  
-          
   
           .ResidentsCard-Header-img {
             width: 100%;
