@@ -14,8 +14,10 @@ const ResidentsCard = ({url}) => {
     
     useEffect ( () => {
         if (resident?.status === "Dead") {
-           setCircleColor("red")
-        } else {setCircleColor("green")}
+            setCircleColor("red");
+        } else if (resident?.status === "Alive") {
+            setCircleColor("green")
+        } else {setCircleColor("grey")}
 
     }, [resident])
 
