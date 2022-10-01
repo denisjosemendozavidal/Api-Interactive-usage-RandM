@@ -39,9 +39,9 @@ li {
     align-content: center;
     gap: 5%;
     padding: 3%;
-    background-image: url("./images/green-starts.gif");
-    
-    
+    background-image: url("./images/green-portal.gif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
     .search-and-button {
@@ -102,6 +102,7 @@ li {
       display: flex;
       flex-wrap: wrap;
       gap: 5%;
+     
     }
 
       .ResidentsCard {
