@@ -212,6 +212,10 @@ li {
           transition: 0.3s;
         }
 
+          .suglist-tittle {
+            
+          }
+
           .suglist > li:hover {
             cursor: pointer;
             color: var(--green-portal);
@@ -661,6 +665,7 @@ li {
         width: 100vw;
         height: fit-content;
         transition: 0.5s;
+        margin: 1%;
       }
   
         .search-and-button:hover{
