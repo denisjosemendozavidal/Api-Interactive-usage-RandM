@@ -1,3 +1,5 @@
+/*Over all styles*/
+
 *{
   margin: 0;
   padding: 0;
@@ -18,6 +20,7 @@ li {
   list-style: none;
 }
 
+/*Styles begin here*/
 .App {
   display: flex;
   width: 100vw;
@@ -215,3 +218,615 @@ li {
             box-shadow: 3px 3px 30px var(--green-portal);
             transition: 0.3s;
           }
+
+@media (max-width: 1250px) {
+    .App {
+      display: flex;
+      width: 100vw;
+      height: fit-content;
+      position: fixed;
+    }
+    
+      .App-main-img {
+        height: 100vh;
+        width: 40vw;
+        
+      }
+    
+      .everything-but-the-main-img {
+        display: flex;
+        width: 60vw;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        gap: 5%;
+        padding: 3%;
+        background-color: var(--light-black);
+        background-image: url("../images/green-starts.gif");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    
+        .search-and-button {
+          display: flex;
+          flex-direction: column;
+          gap: 20%;
+          width: 100%;
+          background-color: var(--lighter-green-bgcolor);
+          padding: 10%;
+          border-radius: 50px;
+          width: 50vh;
+          height: 160px;
+          transition: 0.5s;
+        }
+    
+          .search-and-button:hover{
+            box-shadow: 3px 3px 30px var(--green-portal);
+            transition: 0.5s;
+          }
+    
+          .search {
+            font-size: x-large;
+            text-align: center;
+          }
+    
+    
+          .location-finder-button {
+            font-size: large;
+            height: 100%;
+            width: 50%;
+            align-self: center;
+            border-radius: 50px;
+            padding: 2%;
+            background-color: var(--green-circle);
+            transition: 1s;
+          }
+    
+            .location-finder-button:hover {
+              font-size: large;
+              color: var(--dark-white-bgcolor);
+              height: 100%;
+              width: 50%;
+              align-self: center;
+              border-radius: 50px;
+              padding: 2%;
+              background-color: var(--green-portal);
+              transition: 1s;
+              cursor: pointer;
+              box-shadow: 3px 3px 30px var(--green-portal);
+            }
+    
+    
+        .location-card {
+          background-color: var(--lighter-green-bgcolor);
+          width: 100%;
+          color: var(--dark-white-bgcolor);
+          border-radius: 50px;
+          padding: 2%;
+          display: flex;
+          flex-direction: column;
+          gap: 5%;
+          height: fit-content;
+          transition: 0.5s;
+        }
+    
+          .location-card:hover {
+            box-shadow: 3px 3px 30px var(--green-portal);
+            transition: 0.5s;
+          }
+    
+          .locationCard-tittle {
+            text-align: center;
+            
+          }
+    
+          .locationCard-elemets{
+            display: flex;
+            width: 100%;
+            text-align: center;
+            gap: 5%;
+            flex-wrap: wrap;
+            margin: 1%;
+            
+          }
+    
+        .residents-card-wrapper {
+          overflow-y: scroll;
+          overflow-x: hidden;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5%;
+          padding: 2%;
+        }
+    
+          .ResidentsCard {
+            background-color: var(--lighter-green-bgcolor);
+            border-radius: 50px;
+            height: fit-content;
+            width: 25%;
+            overflow: hidden;
+            color: var(--dark-white-bgcolor);
+            padding: 3%;
+            transition: 0.5s;
+          }
+    
+                .ResidentsCard:hover{
+                  box-shadow: 3px 3px 30px var(--green-portal);
+                  transition: 0.5s;
+                }
+    
+            
+    
+            .ResidentsCard-Header-img {
+              width: 100%;
+              height: 50%;
+              border-radius: 20px;
+            }
+    
+            .circle-and-status {
+              display: flex;
+              font-size: smaller;
+            }
+    
+              .circle-for-status {
+                width: 10%;
+                border-radius: 50%;
+              }
+    
+            .ResidentsCard-name {
+              align-self: center;
+              text-align: center;
+              font-size: large;
+              margin: 5%;
+              font-weight: lighter;
+            }
+    
+            .ResidentsCard-species {
+              font-size: small;
+              font-weight: lighter;
+            }
+    
+            .ResidentsCard-origin {
+              font-size: small;
+              font-weight: lighter;
+            }
+    
+            .ResidentsCard-ep-apearing {
+              font-size: small;
+              font-weight: lighter;
+            }
+    
+            .suglist {
+              max-height: 100px;
+              overflow-y: scroll;
+              color: var(--dark-white-bgcolor);
+              background-color: var(--lighter-green-bgcolor);
+              margin-top: 3%;
+              text-align: center;
+              border-radius: 20px;
+              font-weight: lighter;
+              transition: 0.3s;
+            }
+    
+              .suglist > li:hover {
+                cursor: pointer;
+                color: var(--green-portal);
+                box-shadow: 3px 3px 30px var(--green-portal);
+                transition: 0.3s;
+              }
+}
+
+@media (max-width: 1000px) {
+  .App {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    position: fixed;
+  }
+  
+    .App-main-img {
+      height: 100vh;
+      width: 30vw;
+      display: none;
+    }
+  
+    .everything-but-the-main-img {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      gap: 5%;
+      padding: 3%;
+      background-color: var(--light-black);
+      background-image: url("../images/green-starts.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  
+      .search-and-button {
+        display: flex;
+        flex-direction: column;
+        gap: 20%;
+        width: 100%;
+        background-color: var(--lighter-green-bgcolor);
+        padding: 10%;
+        border-radius: 50px;
+        width: 50vh;
+        height: 160px;
+        transition: 0.5s;
+      }
+  
+        .search-and-button:hover{
+          box-shadow: 3px 3px 30px var(--green-portal);
+          transition: 0.5s;
+        }
+  
+        .search {
+          font-size: x-large;
+          text-align: center;
+        }
+  
+  
+        .location-finder-button {
+          font-size: large;
+          height: 100%;
+          width: 50%;
+          align-self: center;
+          border-radius: 50px;
+          padding: 2%;
+          background-color: var(--green-circle);
+          transition: 1s;
+        }
+  
+          .location-finder-button:hover {
+            font-size: large;
+            color: var(--dark-white-bgcolor);
+            height: 100%;
+            width: 50%;
+            align-self: center;
+            border-radius: 50px;
+            padding: 2%;
+            background-color: var(--green-portal);
+            transition: 1s;
+            cursor: pointer;
+            box-shadow: 3px 3px 30px var(--green-portal);
+          }
+  
+  
+      .location-card {
+        background-color: var(--lighter-green-bgcolor);
+        width: 100%;
+        color: var(--dark-white-bgcolor);
+        border-radius: 50px;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        height: fit-content;
+        transition: 0.5s;
+      }
+  
+        .location-card:hover {
+          box-shadow: 3px 3px 30px var(--green-portal);
+          transition: 0.5s;
+        }
+  
+        .locationCard-tittle {
+          text-align: center;
+          
+        }
+  
+        .locationCard-elemets{
+          display: flex;
+          width: 100%;
+          text-align: center;
+          gap: 5%;
+          flex-wrap: wrap;
+          margin: 1%;
+          
+        }
+  
+      .residents-card-wrapper {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding: 2%;
+      }
+  
+        .ResidentsCard {
+          background-color: var(--lighter-green-bgcolor);
+          border-radius: 50px;
+          height: fit-content;
+          width: 40%;
+          overflow: hidden;
+          color: var(--dark-white-bgcolor);
+          padding: 3%;
+          transition: 0.5s;
+        }
+  
+              .ResidentsCard:hover{
+                box-shadow: 3px 3px 30px var(--green-portal);
+                transition: 0.5s;
+              }
+  
+          
+  
+          .ResidentsCard-Header-img {
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+          }
+  
+          .circle-and-status {
+            display: flex;
+            font-size: smaller;
+          }
+  
+            .circle-for-status {
+              width: 10%;
+              border-radius: 50%;
+            }
+  
+          .ResidentsCard-name {
+            align-self: center;
+            text-align: center;
+            font-size: large;
+            margin: 5%;
+            font-weight: lighter;
+          }
+  
+          .ResidentsCard-species {
+            font-size: small;
+            font-weight: lighter;
+          }
+  
+          .ResidentsCard-origin {
+            font-size: small;
+            font-weight: lighter;
+          }
+  
+          .ResidentsCard-ep-apearing {
+            font-size: small;
+            font-weight: lighter;
+          }
+  
+          .suglist {
+            max-height: 100px;
+            overflow-y: scroll;
+            color: var(--dark-white-bgcolor);
+            background-color: var(--lighter-green-bgcolor);
+            margin-top: 3%;
+            text-align: center;
+            border-radius: 20px;
+            font-weight: lighter;
+            transition: 0.3s;
+          }
+  
+            .suglist > li:hover {
+              cursor: pointer;
+              color: var(--green-portal);
+              box-shadow: 3px 3px 30px var(--green-portal);
+              transition: 0.3s;
+            }
+}
+
+@media (max-width: 500px) {
+  .App {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    position: fixed;
+  }
+  
+    .App-main-img {
+      height: 100vh;
+      width: 30vw;
+      display: none;
+    }
+  
+    .everything-but-the-main-img {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      gap: 5%;
+      padding: 3%;
+      background-color: var(--light-black);
+      background-image: url("../images/green-starts.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  
+      .search-and-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100vw;
+        background-color: var(--lighter-green-bgcolor);
+        padding: 5%;
+        border-radius: 50px;
+        width: 100vw;
+        height: fit-content;
+        transition: 0.5s;
+      }
+  
+        .search-and-button:hover{
+          box-shadow: 3px 3px 30px var(--green-portal);
+          transition: 0.5s;
+        }
+  
+        .search {
+          font-size: large;
+          text-align: center;
+          border-radius: 20px;
+          width: 70%;
+          padding: 3%;
+        }
+  
+  
+        .location-finder-button {
+          font-size: medium;
+          font-weight: lighter;
+          height: 50%;
+          width: 50%;
+          align-self: center;
+          border-radius: 50px;
+          padding: 2%;
+          background-color: var(--green-circle);
+          transition: 1s;
+        }
+  
+          .location-finder-button:hover {
+            font-size: large;
+            color: var(--dark-white-bgcolor);
+            height: 100%;
+            width: 50%;
+            align-self: center;
+            border-radius: 50px;
+            padding: 2%;
+            background-color: var(--green-portal);
+            transition: 1s;
+            cursor: pointer;
+            box-shadow: 3px 3px 30px var(--green-portal);
+          }
+  
+  
+      .location-card {
+        background-color: var(--lighter-green-bgcolor);
+        width: 100%;
+        color: var(--dark-white-bgcolor);
+        border-radius: 50px;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        height: fit-content;
+        transition: 0.5s;
+      }
+  
+        .location-card:hover {
+          box-shadow: 3px 3px 30px var(--green-portal);
+          transition: 0.5s;
+        }
+  
+        .locationCard-tittle {
+          text-align: center;
+          
+        }
+  
+        .locationCard-elemets{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          text-align: center;
+          gap: 5%;
+          flex-wrap: wrap;
+          margin: 1%;
+          
+        }
+  
+      .residents-card-wrapper {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5%;
+        padding: 2%;
+      }
+  
+        .ResidentsCard {
+          background-color: var(--lighter-green-bgcolor);
+          border-radius: 50px;
+          height: fit-content;
+          width: 70%;
+          overflow: hidden;
+          color: var(--dark-white-bgcolor);
+          padding: 3%;
+          transition: 0.5s;
+        }
+  
+              .ResidentsCard:hover{
+                box-shadow: 3px 3px 30px var(--green-portal);
+                transition: 0.5s;
+              }
+  
+          
+  
+          .ResidentsCard-Header-img {
+            width: 100%;
+            height: 50%;
+            border-radius: 20px;
+          }
+  
+          .circle-and-status {
+            display: flex;
+            font-size: smaller;
+          }
+  
+            .circle-for-status {
+              width: 10%;
+              border-radius: 50%;
+            }
+  
+          .ResidentsCard-name {
+            align-self: center;
+            text-align: center;
+            font-size: large;
+            margin: 5%;
+            font-weight: lighter;
+          }
+  
+          .ResidentsCard-species {
+            font-size: small;
+            font-weight: lighter;
+            text-align: center;
+          }
+  
+          .ResidentsCard-origin {
+            font-size: small;
+            font-weight: lighter;
+            text-align: center;
+          }
+  
+          .ResidentsCard-ep-apearing {
+            font-size: small;
+            font-weight: lighter;
+            text-align: center;
+          }
+  
+          .suglist {
+            max-height: 100px;
+            overflow-y: scroll;
+            color: var(--dark-white-bgcolor);
+            background-color: var(--lighter-green-bgcolor);
+            margin-top: 3%;
+            text-align: center;
+            border-radius: 20px;
+            font-weight: lighter;
+            transition: 0.3s;
+          }
+  
+            .suglist > li:hover {
+              cursor: pointer;
+              color: var(--green-portal);
+              box-shadow: 3px 3px 30px var(--green-portal);
+              transition: 0.3s;
+            }
+}
