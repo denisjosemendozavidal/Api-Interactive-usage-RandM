@@ -39,6 +39,7 @@ li {
     align-content: center;
     gap: 5%;
     padding: 3%;
+    background-image: url("./images/green-stars.jpg");
     background-image: url("./images/green-starts.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -128,7 +129,7 @@ li {
 
         .circle-and-status {
           display: flex;
-  
+          font-size: smaller;
         }
 
           .circle-for-status {

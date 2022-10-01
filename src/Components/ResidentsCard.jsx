@@ -25,7 +25,7 @@ const ResidentsCard = ({url}) => {
             <img className='ResidentsCard-Header-img' src={resident?.image} alt="" />
             <div className='circle-and-status'>
                 <div className='circle-for-status' style={{backgroundColor: `${circleColor}`}}></div>
-                <span className='ResidentsCard-Header-Status'>{`Status: ${resident?.status}`}</span>
+                <span className='ResidentsCard-Header-Status'>{`${resident?.status}`}</span>
             </div>
         </header>
 
