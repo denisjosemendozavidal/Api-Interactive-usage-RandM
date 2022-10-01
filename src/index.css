@@ -11,6 +11,7 @@
   --red-circle: red; 
   --green-circle: lightgreen;
   --green-portal: #A7CB54; 
+  --light-black: rgb(34, 32, 32);
 }
 
 li {
@@ -40,8 +41,8 @@ li {
     align-content: center;
     gap: 5%;
     padding: 3%;
-    background-color: var(--green-bgcolor);
-    background-image: url("./images/green-starts.gif");
+    background-color: var(--light-black);
+    background-image: url("../images/green-starts.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
