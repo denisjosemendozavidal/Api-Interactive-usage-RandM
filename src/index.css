@@ -3,3 +3,145 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --dark-white-bgcolor: #E5E5E5;  
+  --green-bgcolor: #020c0e; 
+  --lighter-green-bgcolor: #135b66;
+  --red-circle: red; 
+  --green-circle: lightgreen;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  position: fixed;
+}
+
+  .App-main-img {
+    height: 100vh;
+    width: 50vw;
+    
+  }
+
+  .everything-but-the-main-img {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    gap: 5%;
+    padding: 3%;
+    background-image: url("./images/green-starts.gif");
+    
+    
+  }
+
+    .search-and-button {
+      display: flex;
+      flex-direction: column;
+      gap: 20%;
+      width: 100%;
+      background-color: var(--lighter-green-bgcolor);
+      padding: 10%;
+      border-radius: 50px;
+      width: 50vh;
+      height: 160px;
+    }
+
+      .search {
+        font-size: x-large;
+        text-align: center;
+      }
+
+      .location-finder-button {
+        font-size: large;
+        height: 100%;
+        width: 50%;
+        align-self: center;
+        border-radius: 50px;
+        padding: 2%;
+      }
+    
+    .location-card {
+      background-color: var(--lighter-green-bgcolor);
+      width: 100%;
+      color: var(--dark-white-bgcolor);
+      border-radius: 50px;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      
+    }
+
+      .locationCard-tittle {
+        text-align: center;
+        
+      }
+
+      .locationCard-elemets{
+        display: flex;
+        width: 200%;
+        text-align: right;
+        gap: 5%;
+        margin-left: 15%;
+      }
+
+    .residents-card-wrapper {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5%;
+    }
+
+      .ResidentsCard {
+        background-color: var(--lighter-green-bgcolor);
+        border-radius: 50px;
+        height: fit-content;
+        width: 25%;
+        overflow: hidden;
+        color: var(--dark-white-bgcolor);
+      }
+
+            .ResidentsCard:hover{
+              box-shadow: 3px 3px 30px #A7CB54;
+            }
+
+          body::-webkit-scrollbar {
+            width: 30px;               /* width of the entire scrollbar */
+          }
+          
+          body::-webkit-scrollbar-track {
+            background: orange;        /* color of the tracking area */
+          }
+          
+          body::-webkit-scrollbar-thumb {
+            background-color: blue;    /* color of the scroll thumb */
+            border-radius: 50%;       /* roundness of the scroll thumb */
+            border: 3px solid orange;  /* creates padding around scroll thumb */
+          }
+
+        .ResidentsCard-Header-img {
+          width: 100%;
+          height: 50%;
+        }
+
+        .circle-and-status {
+          display: flex;
+  
+        }
+
+          .circle-for-status {
+            width: 10%;
+            border-radius: 50%;
+          }

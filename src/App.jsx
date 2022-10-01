@@ -29,23 +29,32 @@ function App() {
   }
 
   console.log(info);
+
+  <img src="./img" alt="" />
   
   return (
     <div className="App">
-      <h1>Rick and Morty</h1>
-      <form onSubmit={handleSubmit}>
-        <input id='search' placeholder='Try a number from 1 to 126' type="text" />
-        <button >Find your favorite location</button>
-      </form>
-      <LocationCard key={name} info= {info}/>
-      <div>
-        {
-          info?.residents.map ( url =>(
-            <ResidentsCard 
-            key={url}
-            url = {url}/>
-          ))
-        }
+      <img className='App-main-img' src="./images/r-m-moving.gif" alt="" />
+      <div className='everything-but-the-main-img'>
+        <header className='header'>
+          <form className='search-and-button' onSubmit={handleSubmit}>
+            <input className='search' id='search' placeholder='Try a number from 1 to 126' type="text" />
+            <button className='location-finder-button'>Find your favorite location</button>
+          </form>
+        </header>
+        <div className='location-card'>
+          <LocationCard key={name} info= {info}/>
+        </div>
+        
+        <div className='residents-card-wrapper'>
+          {
+            info?.residents.map ( url =>(
+              <ResidentsCard 
+              key={url}
+              url = {url}/>
+            ))
+          }
+        </div>
       </div>
     </div>
   )

@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 
 const ResidentsCard = ({url}) => {
     const [resident, setResident] = useState()
+    const [circleColor, setCircleColor] = useState()
+
 
     useEffect(() => {
         axios.get(url)
@@ -10,23 +12,28 @@ const ResidentsCard = ({url}) => {
             .catch(err => console.log(err))
     }, [])
     
-    
+    useEffect ( () => {
+        if (resident?.status === "Dead") {
+           setCircleColor("red")
+        } else {setCircleColor("green")}
+
+    }, [resident])
 
     return (
-    <div>
-        <header>
-            <img src={resident?.image} alt="" />
-            <div>
-                <div className='circle'></div>
-                <span>{`Status: ${resident?.status}`}</span>
+    <div className='ResidentsCard'>
+        <header className='ResidentsCard-Header'>
+            <img className='ResidentsCard-Header-img' src={resident?.image} alt="" />
+            <div className='circle-and-status'>
+                <div className='circle-for-status' style={{backgroundColor: `${circleColor}`}}></div>
+                <span className='ResidentsCard-Header-Status'>{`Status: ${resident?.status}`}</span>
             </div>
         </header>
 
         <section>
-            <h2>{`Name: ${resident?.name}`}</h2>
-            <h4>{`Species: ${resident?.species}`}</h4>
-            <h4>{`Origin: ${resident?.origin.name}`}</h4>
-            <h4>{`Appeard on:${resident?.episode.length} episode/s`} </h4>
+            <h2 className='ResidentsCard-name'>{`Name: ${resident?.name}`}</h2>
+            <h4 className='ResidentsCard-species'>{`Species: ${resident?.species}`}</h4>
+            <h4 className='ResidentsCard-origin'>{`Origin: ${resident?.origin.name}`}</h4>
+            <h4 className='ResidentsCard-ep-apearing'>{`Appeard on:${resident?.episode.length} episode/s`} </h4>
         </section>
         
         
