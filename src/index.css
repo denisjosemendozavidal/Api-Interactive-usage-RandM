@@ -117,19 +117,7 @@ li {
               box-shadow: 3px 3px 30px #A7CB54;
             }
 
-          body::-webkit-scrollbar {
-            width: 30px;               /* width of the entire scrollbar */
-          }
-          
-          body::-webkit-scrollbar-track {
-            background: orange;        /* color of the tracking area */
-          }
-          
-          body::-webkit-scrollbar-thumb {
-            background-color: blue;    /* color of the scroll thumb */
-            border-radius: 50%;       /* roundness of the scroll thumb */
-            border: 3px solid orange;  /* creates padding around scroll thumb */
-          }
+        
 
         .ResidentsCard-Header-img {
           width: 100%;
