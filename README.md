@@ -2,7 +2,7 @@ The Rick and Morty Project.
 
 Link: https://denis-mendoza-api-usage-with-randm.netlify.app/
 
-Welcome to The Rick and Morty Project. Developed on React.js (Do not worry if you do not know anything about the show, I don’t either, it was chosen because of how rich of information the API is), The goal behind it was understanding more about how asynchronous requests and  REST APIs work while customizing the rendering to user’s interaction with the app.The app starts rendering information about a random location allowing the user to then customize the rendering by indicating what location they want the information to be based on.
+Welcome to The Rick and Morty Project. Developed on React.js (Do not worry if you do not know anything about the show, I don’t either, it was chosen because of how rich of information the API is), The goal behind it was understanding more about how asynchronous requests and  REST APIs work while customizing the rendering to user’s interaction with the app. The app starts rendering information about a random location allowing the user to then customize the rendering by indicating what location they want the information to be based on.
 
 Structure: 
 
